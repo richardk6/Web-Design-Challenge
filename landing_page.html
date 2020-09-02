@@ -13,7 +13,7 @@
   
   <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(215, 236, 245);">
-      <a class="navbar-brand" href="http://127.0.0.1:5500/Web-Design-Challenge/landing_page.html">Weather Home</a>
+      <a class="navbar-brand" href="http://127.0.0.1:5501/Web-Design-Challenge/landing_page.html">Weather Home</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -42,48 +42,59 @@
     </nav>
 
  
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 d-flex justify-content-right">
 
-    <table class="table table-borderless" style="width:500px">
-      <div class="text-right"></div>
-      <thead>
-        <tr>
-          <th scope="col">Vizualizations</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td scope="row">
-              <a href="http://127.0.0.1:5500/Web-Design-Challenge/cloudiness.html"><img class="img-responsive" src="Resources/assets/images/Fig3.png" style="height: 200px; width: 300px;display:inline-block" class="card-img-top" alt="plot of Latitude versus Cloud"></a>
-          </td>
-          <td>
-            <a href="http://127.0.0.1:5500/Web-Design-Challenge/humidity.html"><img class="img-responsive" src="Resources/assets/images/Fig2.png" style="height: 200px; width: 300px;display:inline-block" class="card-img-top" alt="plot of Latitude versus Humidity"></a>
-          </td>
-        </tr>
-        <tr>
-          <td scope="row">
-            <a href="http://127.0.0.1:5500/Web-Design-Challenge/temperature.html"><img class="img-responsive" src="Resources/assets/images/Fig1.png" style="height: 200px; width: 300px;display:inline-block" class="card-img-top" alt="plot of Latitude versus Temperature"></a>
-          <td>
-            <a href="http://127.0.0.1:5500/Web-Design-Challenge/windspeed.html"><img class="img-responsive" src="Resources/assets/images/Fig4.png" style="height: 200px; width: 300px;display:inline-block" class="card-img-top" alt="plot of Latitude versus Wind Speed"></a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+          <div class="card border-light mb-3" style="max-width: 500px;">
+            <div class="text-left"></div>
+            <div class="row no-gutters">
+              <div class="col-md-6">
+                <img src="Resources/assets/images/Fig1.png" class="card-img" alt="plot of Latitude versus Cloud">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title">Weather Data Summary</h5>
+                  <p class="card-text">We decided to look at how weather changes as you approach the equator. To begin this research we pulled weather data from 500 cities via the OpenWeatherMap API.</p>
+                  <p class="card-text">We then created plots using Matplotlib to plot various factors versus latitude; including cloudiness, humidity, temperature, and wind speed. You can review this site to see our analysis, that includes the source data, visualizations, explanations, descriptions, and correlations.</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
 
-    <div class="card border-light mb-3" style="max-width: 540px;">
-      <div class="text-left"></div>
-      <div class="row no-gutters">
-        <div class="col-md-6">
-          <img src="Resources/assets/images/Fig1.png" class="card-img" alt="plot of Latitude versus Cloud">
+        <div class="col-sm-6 d-flex justify-content-center">
+          <table class="table table-borderless" style="width:500px">
+            <div class="text-right"></div>
+            <thead>
+              <tr>
+                <th scope="col">Vizualizations</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">
+                    <a href="http://127.0.0.1:5500/Web-Design-Challenge/cloudiness.html"><img class="img-responsive" src="Resources/assets/images/Fig3.png" style="height: 200px; width: 300px;display:inline-block" class="card-img-top" alt="plot of Latitude versus Cloud"></a>
+                </td>
+                <td>
+                  <a href="http://127.0.0.1:5500/Web-Design-Challenge/humidity.html"><img class="img-responsive" src="Resources/assets/images/Fig2.png" style="height: 200px; width: 300px;display:inline-block" class="card-img-top" alt="plot of Latitude versus Humidity"></a>
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">
+                  <a href="http://127.0.0.1:5500/Web-Design-Challenge/temperature.html"><img class="img-responsive" src="Resources/assets/images/Fig1.png" style="height: 200px; width: 300px;display:inline-block" class="card-img-top" alt="plot of Latitude versus Temperature"></a>
+                <td>
+                  <a href="http://127.0.0.1:5500/Web-Design-Challenge/windspeed.html"><img class="img-responsive" src="Resources/assets/images/Fig4.png" style="height: 200px; width: 300px;display:inline-block" class="card-img-top" alt="plot of Latitude versus Wind Speed"></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
         </div>
-        <div class="col-md-6">
-          <div class="card-body">
-            <h5 class="card-title">Weather Data Summary</h5>
-            <p class="card-text">We decided to look at how weather changes as you approach the equator. To begin this research we pulled weather data from 500 cities via the OpenWeatherMap API.</p>
-            <p class="card-text">We then created plots using Matplotlib to plot various factors versus latitude; including cloudiness, humidity, temperature, and wind speed. You can review this site to see our analysis, that includes the source data, visualizations, explanations, descriptions, and correlations.</p>
-          </div>
-        </div>
-      </div>
-    </div>   
+      </div>  
+    </div>
+
+
   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
