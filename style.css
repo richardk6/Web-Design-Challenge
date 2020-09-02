@@ -85,7 +85,7 @@ h1 {
 @media (max-width: 575.98px) {
     .table.table {
         max-width: 25%;
-        right: -150px;
+        right: -300px;
         top: 800px
     }
 } 
@@ -93,7 +93,7 @@ h1 {
 @media (min-width: 576px) and (max-width: 767.98px) {
     .table.table {
         max-width: 25%;
-        right: 800px;
+        right: 900px;
         top: 800px
     }
 } 
